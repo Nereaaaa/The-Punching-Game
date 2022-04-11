@@ -9,6 +9,30 @@
 </head>
 <body>
     <div class="main">
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 750;
+          document.documentElement.scrollTop = 750;
+        }
+        </script>
+
         <div class="titulo">
             <h1>The Punching Game</h1>
         </div>
@@ -118,52 +142,105 @@
         </div>
         <div class="nav-personajes">
             
-            <button class="tablink" onclick="openPage('Concept', this,'#5796cc' )">Concept</button>
-            <button class="tablink" onclick="openPage('Historia', this, '#5796cc')" id="defaultOpen">Historia</button>
-            <button class="tablink" onclick="openPage('Habilidades', this, '#5796cc')">Habilidades</button>
-            <button class="tablink" onclick="openPage('Galeria', this,'#5796cc')">Galeria</button>
+            <button class="tablink" onclick="openPage('Gustav', this,'#5796cc' )">Gustav</button>
+            <button class="tablink" onclick="openPage('Luzma', this, '#5796cc')" id="defaultOpen">Luzma</button>
+            <button class="tablink" onclick="openPage('Syren', this, '#5796cc')">Syren</button>
+            <button class="tablink" onclick="openPage('Floki', this,'#5796cc')">Floki</button>
+            <button class="tablink" onclick="openPage('NJ', this, '#5796cc')">NJ</button>
+            <button class="tablink" onclick="openPage('Aracne', this,'#5796cc')">Aracne</button>
             
-            <div id="Concept" class="tabcontent2">
-              <h3>Concept</h3>
-              <p> Esta es la parte de conceptAr</p>
+            <div id="Gustav" class="tabcontent2">
+              <div class="historietas">
+                <h3>GUSTAV</h3>
+              <p>Gustav es un personaje del planeta Tierra, de New York. Es un sinvergüenza, egoísta y rastrero, acostumbrado a no hacer nada y conseguir lo que quiere. Él vivía una vida de lujos, sin hacer nada, gastándose el dinero de su papá, un magnate de Wall Street. Hasta su padre fue encarcelado por robar dinero negro, perdiendo su vida de lujos. Él decidió meterse al torneo para recuperarla. ¿Conseguirá volver a su vida? </p>
+              </div>
+              <div class="concept">
+
+              </div>
+              <div class="habilidades">
+
+              </div>
+              <div class="galeria">
+
+              </div>
             </div>
             
-            <div id="Historia" class="tabcontent2">
+            <div id="Luzma" class="tabcontent2">
                 <div class="historietas">
-                    <h3>GUSTAV</h3>
-                    <p>Gustav es un personaje del planeta Tierra, de New York. 
-                  Es un sinvergüenza, egoísta y rastrero, acostumbrado a no 
-                  hacer nada y conseguir lo que quiere. Él vivía una vida de 
-                  lujos, sin hacer nada, gastándose el dinero de su papá, un magnate 
-                  de Wall Street. Hasta su padre fue encarcelado por robar dinero negro, 
-                  perdiendo su vida de lujos. Él decidió meterse al torneo para recuperarla. 
-                  ¿Conseguirá volver a su vida? </p> 
-                <br>
-                <h3>FLOKI</h3>
-                <p>Floki es el hijo menor de la familia Sang, familia de ninjas encargados de proteger el planeta Kayto. Él nunca hacía caso a sus mayores, no iba al colegio, no quería aprender a usar sus habilidades de ninja para proteger a los demás, sino que prefería estar divirtiéndose. Por ello, su padre le mandó al torneo para enderezarle y seguir con la tradición familiar, ya que sus hermanos y ancestros participaron antes, perteneciendo a un linaje que nunca ha perdido antes. ¿Será él el primero? ¿Podrá con la presión familiar?</p>
-                <br>
-                <h3>ARACNE</h3>
-                <p>Aracne era la hija mayor de unos campesinos, su madre murió al dar a luz a su hermano y vivía con él y su padre. Su padre era un borracho que se gastaba el poco dinero que tenían en el juego. Una mañana Aracne salió a cazar, al volver se encontró con su casa destrozada, su padre muerto y una carta que decía que habían secuestrado a su hermano pequeño. Al parecer su padre le debía mucho dinero a un mafioso a costa del juego, y este se lo iba a cobrar a través de su hija, tomando como moneda de cambio la vida de su hermano. ¿Salvará la vida de su hermano?  </p>
-                <br>
-                <h3>LUZMA</h3>
-                <p>Luzma es un hada del planeta Alfea dedicada a la protección y cuidado de las personas indefensas. Ella va de planeta en planeta ayudando y aportando cuidados a quienes más lo necesitan gracias a sus poderes y conocimientos. Un día mientras le salvaba la vida a un potro recién nacido, se enteró que Andros, el pueblo donde se crió, estaba en guerra civil. Después de seis años, la guerra ha finalizado pero la ciudad ha quedado destrozada y hay múltiples heridos. En busca de dinero decidió meterse al torneo para ayudar a su pueblo. ¿Ayudará a los aldeanos? ¿Ganará el bien común y no el propio por primera vez?</p>
-                <br>
-                <h3>NJ</h3>
-                <p>Nj es un adolescente italiano, nacido en el planeta Tierra. Desde pequeño siempre ha sido un chico solitario y con un gusto especial por la tecnología. Él es un friki de los ordenadores, capaz de hackear cualquier cosa. Un día su novia cayó enferma del corazón, y para que pudieran operarla necesitaba dinero, el cual lo consiguió hackeando al heredero de Ferrari. Quién está buscando al culpable a toda costa. Temiendo por su vida Nj decidió apuntarse al torneo pensando que sería el último lugar donde le encontrarían. ¿Conseguirá escapar de la muerte? ¿Temerá más a los contrincantes que a la furia italiana?</p>
-                <br>
+                  <h3>LUZMA</h3>
+                  <p>Luzma es un hada del planeta Alfea dedicada a la protección y cuidado de las personas indefensas. Ella va de planeta en planeta ayudando y aportando cuidados a quienes más lo necesitan gracias a sus poderes y conocimientos. Un día mientras le salvaba la vida a un potro recién nacido, se enteró que Andros, el pueblo donde se crió, estaba en guerra civil. Después de seis años, la guerra ha finalizado pero la ciudad ha quedado destrozada y hay múltiples heridos. En busca de dinero decidió meterse al torneo para ayudar a su pueblo. ¿Ayudará a los aldeanos? ¿Ganará el bien común y no el propio por primera vez?</p>
+                </div>
+                <div class="concept">
+
+                </div>
+                <div class="habilidades">
+  
+                </div>
+                <div class="galeria">
+                  
+                </div>
+            </div>
+            
+            <div id="Syren" class="tabcontent2">
+              <div class="historietas">
                 <h3>SYREN</h3>
                 <p>Syren es la heredera de Atlántida, cansada de su vida real decidió un día escapar y subir a la superficie. Allí, conoció a un muchacho de buena familia, que heredaría el liderazgo del torneo Unlimited Death. Ella se enamoró de él, pensando que era correspondido abandonó su reino y el trono, quedando sentenciada al exilio para siempre. Cuando subió para vivir con su amado, descubrió que él se había casado con otra. Llena de rabia por el engaño, decidió apuntarse al torneo cuando se enteró que el joven le daría el premio al ganador, así podría acercarse a él y vengarse. ¿Conseguirá su venganza o esa rabia le llevará a la muerte?</p>
-            </div>
+              </div>
+              <div class="concept">
+
+              </div>
+              <div class="habilidades">
+
+              </div>
+              <div class="galeria">
+                
+              </div>
             </div>
             
-            <div id="Habilidades" class="tabcontent2">
-              <h3>Contact</h3>
-              <p>Get in touch, or swing by for a cup of coffee.</p>
+            <div id="Floki" class="tabcontent2">
+              <div class="historietas">
+                <h3>FLOKI</h3>
+                <p>Floki es el hijo menor de la familia Sang, familia de ninjas encargados de proteger el planeta Kayto. Él nunca hacía caso a sus mayores, no iba al colegio, no quería aprender a usar sus habilidades de ninja para proteger a los demás, sino que prefería estar divirtiéndose. Por ello, su padre le mandó al torneo para enderezarle y seguir con la tradición familiar, ya que sus hermanos y ancestros participaron antes, perteneciendo a un linaje que nunca ha perdido antes. ¿Será él el primero? ¿Podrá con la presión familiar?</p>
+              </div>
+              <div class="concept">
+
+              </div>
+              <div class="habilidades">
+
+              </div>
+              <div class="galeria">
+                
+              </div>
             </div>
-            
-            <div id="Galeria" class="tabcontent2">
-              <h3>About</h3>
-              <p>Who we are and what we do.</p>
+            <div id="NJ" class="tabcontent2">
+              <div class="historietas">
+                <h3>NJ</h3>
+                <p>Nj es un adolescente italiano, nacido en el planeta Tierra. Desde pequeño siempre ha sido un chico solitario y con un gusto especial por la tecnología. Él es un friki de los ordenadores, capaz de hackear cualquier cosa. Un día su novia cayó enferma del corazón, y para que pudieran operarla necesitaba dinero, el cual lo consiguió hackeando al heredero de Ferrari. Quién está buscando al culpable a toda costa. Temiendo por su vida Nj decidió apuntarse al torneo pensando que sería el último lugar donde le encontrarían. ¿Conseguirá escapar de la muerte? ¿Temerá más a los contrincantes que a la furia italiana?</p>
+              </div>
+              <div class="concept">
+
+              </div>
+              <div class="habilidades">
+
+              </div>
+              <div class="galeria">
+                
+              </div>
+            </div>
+            <div id="Aracne" class="tabcontent2">
+              <div class="historietas">
+                <h3>ARACNE</h3>
+                <p>Aracne era la hija mayor de unos campesinos, su madre murió al dar a luz a su hermano y vivía con él y su padre. Su padre era un borracho que se gastaba el poco dinero que tenían en el juego. Una mañana Aracne salió a cazar, al volver se encontró con su casa destrozada, su padre muerto y una carta que decía que habían secuestrado a su hermano pequeño. Al parecer su padre le debía mucho dinero a un mafioso a costa del juego, y este se lo iba a cobrar a través de su hija, tomando como moneda de cambio la vida de su hermano. ¿Salvará la vida de su hermano?  </p>
+              </div>
+              <div class="concept">
+
+              </div>
+              <div class="habilidades">
+
+              </div>
+              <div class="galeria">
+                
+              </div>
             </div>
             <script>
                 function openPage(pageName, elmnt, color) {
@@ -362,8 +439,118 @@
         </a>
       </div>
       <div class="cuadroComentarios">
-        
+
       </div>
      </div>
+     <!-- FIN COMENTARIOS-->
+     <div class="apartado-preguntas">
+      <div class="cabezeras">
+        <a name="Preguntas">
+         <img style="border: 5px solid; color: #a6a183;" src="Imagenes web/Comentarios.png" alt="#" >
+        </a>
+      </div>
+      <div class="cuadroPreguntas">
+        
+        <dl class="faq">
+          <dt>
+            <button type="button" aria-expanded="false" aria-controls="faq1_desc">What do I do if I have a permit for an assigned lot, but can't find a space there?</button>
+          </dt>
+          <dd>
+            <div id="faq1_desc" class="desc">
+              Park at the nearest available parking meter without paying the meter
+              and call 999-999-9999 to report the problem. We will note and approve your alternate
+              location and will investigate the cause of the shortage in your assigned facility.
+            </div>
+          </dd>
+          <dt>
+            <button type="button" aria-expanded="false" aria-controls="faq2_desc">What do I do if I lose my permit or if my permit is stolen?</button>
+          </dt>
+          <dd>
+            <div id="faq2_desc" class="desc">You should come to the Parking office and report the
+              loss. There is a fee to replace your lost permit. However, if your permit was stolen, a
+              copy of a police report needs to be submitted along with a stolen parking permit form for a fee replacement exemption.
+            </div>
+          </dd>
+          <dt>
+            <button type="button" aria-expanded="false" aria-controls="faq3_desc">Is there free parking on holidays?</button>
+          </dt>
+          <dd>
+            <div id="faq3_desc" class="desc">
+              All facilities are restricted from 2:00 am - 6:00 am on all days. No
+              exceptions are made for any holiday or recess except those officially listed as a
+              <q>Holidays</q> in the calendar. Please note: 24-hour rental spaces, 24-hour rental lots, and
+              disabled parking is enforced at all times.
+            </div>
+          </dd>
+          <dt>
+            <button type="button" aria-expanded="false" aria-controls="faq4_desc">Do all parking facilities have the same enforcement rules?</button>
+          </dt>
+          <dd>
+            <div id="faq4_desc" class="desc">
+              Some parking facility restrictions differ from others. Be sure to
+              take note of the signs at each lot entrance.
+            </div>
+          </dd>
+        </dl>
+        <script>
+          class DisclosureButton {
+            constructor(buttonNode) {
+              this.buttonNode = buttonNode;
+              this.controlledNode = false;
+              var id = this.buttonNode.getAttribute('aria-controls');
+              if (id) {
+                this.controlledNode = document.getElementById(id);
+              }
+              this.buttonNode.setAttribute('aria-expanded', 'false');
+              this.hideContent();
+              this.buttonNode.addEventListener('click', this.onClick.bind(this));
+              this.buttonNode.addEventListener('focus', this.onFocus.bind(this));
+              this.buttonNode.addEventListener('blur', this.onBlur.bind(this));
+            }
+            showContent() {
+              if (this.controlledNode) {
+                this.controlledNode.style.display = 'block';
+              }
+            }
+            hideContent() {
+              if (this.controlledNode) {
+                this.controlledNode.style.display = 'none';
+              }
+            }
+            toggleExpand() {
+              if (this.buttonNode.getAttribute('aria-expanded') === 'true') {
+                this.buttonNode.setAttribute('aria-expanded', 'false');
+                this.hideContent();
+              } else {
+                this.buttonNode.setAttribute('aria-expanded', 'true');
+                this.showContent();
+              }
+            }
+            onClick() {
+              this.toggleExpand();
+            }
+            onFocus() {
+              this.buttonNode.classList.add('focus');
+            }
+            onBlur() {
+              this.buttonNode.classList.remove('focus');
+            }
+          }
+          window.addEventListener(
+            'load',
+            function () {
+              var buttons = document.querySelectorAll(
+                'button[aria-expanded][aria-controls]'
+              );
+              for (var i = 0; i < buttons.length; i++) {
+                new DisclosureButton(buttons[i]);
+              }
+            },
+            false
+          );
+        </script>
+      </div>
+     </div>
+     <!-- FIN PREGUNTAS-->
 </body>
 </html>
