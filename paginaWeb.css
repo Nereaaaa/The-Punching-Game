@@ -317,7 +317,14 @@ body{
 .logo:hover{
   background-color: #ae8eae;
 }
-
+/* Apartado Comentarios*/
+.cuadroComentarios{
+  background-color: #cfc899;
+  padding: 3%;
+  border: solid 5px;
+  border-radius: 35px;
+  border-color: #a6a183;
+}
 /* Apartado Preguntas frecuentes*/
 .cuadroPreguntas{
   background-color: #ffd7d6;
