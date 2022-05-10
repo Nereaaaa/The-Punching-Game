@@ -14,11 +14,11 @@
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <script>
         var mybutton = document.getElementById("myBtn");
-        //Cuando baje 9000px, enseña el botón
+        //Cuando baje 3500px, enseña el botón
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
-          if (document.body.scrollTop > 9000 || document.documentElement.scrollTop > 1600) {
+          if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 3500) {
             mybutton.style.display = "block";
           } else {
             mybutton.style.display = "none";
@@ -26,21 +26,21 @@
         }
         // Cuando clicka en el botón, le lleva hacia arriba
         function topFunction() {
-          document.body.scrollTop = 750;
-          document.documentElement.scrollTop = 750;
+          document.body.scrollTop = 1900;
+          document.documentElement.scrollTop = 1900;
         }
         </script>
 
         <div class="titulo">
-            <h1>The Punching Game</h1>
+            <img src="Imagenes web/Titulo2.png" alt="" style="width: 50%; border-radius: 170px;border-style: solid; border-width: 7px; border-color: #54a79c;">
         </div>
         <div class="desCorta">
             <h3>El juego de pegarse puñetazos</h3>
         </div>
         <div class="intro">
-            <img src="https://www.gamerfocus.co/wp-content/uploads/2018/09/Street-Fighter-V_2016_02-16-16_033.jpg" alt="Imagen de presentación">
+            <img src="Imagenes web/ImagenPrincipal.jpg" alt="Imagen de presentación">
             <div class="desMedia">
-            <p>Unlimited Death no es el típico juego de lucha, resalta por su temática, historia, estética y estilo de pelea de cada luchador, separándose del estilo gore. Se desarrolla en seis escenarios diferentes representando el lugar de procedencia de cada personaje. El juego está siendo desarrolado por el conocido Nholubda Studio y a la espera de la recaudación de fondos necesaria para su publicaión.</p>
+            <p>The Punching Game no es el típico juego de lucha, resalta por su temática, historia, estética y estilo de pelea de cada luchador, separándose del estilo gore. Se desarrolla en seis escenarios diferentes representando el lugar de procedencia de cada personaje. El juego está siendo desarrollado por el conocido Nholubda Studio y a la espera de la recaudación de fondos necesaria para su publicaión.</p>
             </div>
         </div>
         <br>
@@ -51,13 +51,22 @@
                 Práctica de Multimedia, 1º GDDV - Curso 21/22 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor
             </b>
         </div>
-
+        
+        <div class="videos">
+          <div class="trailer">
+            <video src="Imagenes web/Trailer.mp4" width="640" height="480" controls></video>
+          </div>
+          <div class="sonido">
+            <video src="Imagenes web/The Punching Game-Banda Sonora.mp4" width="640" height="480" controls></video>
+          </div>
+        </div>
+        <br>
     <div class="row">
         <div class="column ">
           <div class="content">
               <div class="imagen" style="background-color: #c1daef;">
                 <a href="#Personajes">
-                    <img style="border-radius: 40px;" src="Imagenes web/ChibiSyren.png" alt="Personajes">
+                    <img style="border-radius: 40px; " src="Imagenes web/ChibiSyren.png" alt="Personajes">
                 </a>
               </div>
                 
@@ -128,9 +137,7 @@
               </div>
           </div>
     </div>
-
-    <hr size="5px" color="black">
-
+    <br>
 
     <div class="apartado-personajes">
         <div class="cabezeras">
@@ -154,15 +161,17 @@
               </div>
               <div class="concept">
                 <h3>CONCEPT</h3>
-                <img style="width:50%" src="Imagenes web/ConceptGustav.jpeg" alt="Gustav" >
+                <div class="arte">
+                  <img style="width:50%" src="Imagenes web/ConceptGustav.jpeg" alt="Gustav" >
+                </div>
               </div>
               <div class="habilidades">
                 <h3>HABILIDADES</h3>
-                  <P>L+R+Cua: Rabia: Carga un ataque de ira, lo que avanza hacia delante infligiendo daño. El avance y el daño dependen de la carga.</P>
+                  <P>Rabia: Carga un ataque de ira, lo que avanza hacia delante infligiendo daño. El avance y el daño dependen de la carga.</P>
                   <P>Puñetazo: Carga un puñetazo a corta distancia. El daño aumenta cuanto más se cargue.</P>
                   <P>Brebaje: Gustav bebe, lo que aumenta sus resistencias.</P>
                   <p>Maletín; Lanza su maletín hacia delante.</p>
-                  <p>D+D+Cua+Tri: Barrigazo; Avanza hacia adelante, incapacitando al enemigo si le alcanza e infligiendo daño.</p>
+                  <p>Barrigazo; Avanza hacia adelante, incapacitando al enemigo si le alcanza e infligiendo daño.</p>
                   <p>ULTI:BOMBA: Se impulsa hacia el cielo para luego caer en la posición deseada, aplastando al enemigo, lo que le incapacita. Puede ser cancelado con un aturdimiento. </p>
               </div>
               <div class="galeria">
@@ -177,7 +186,9 @@
                 </div>
                 <div class="concept">
                   <h3>CONCEPT</h3>
-                  <img style="width:50%" src="Imagenes web/ConceptLuzma.jpeg" alt="Luzma" >
+                  <div class="arte">
+                    <img style="width:50%" src="Imagenes web/ConceptLuzma.jpeg" alt="Luzma" >
+                  </div>
                 </div>
                 <div class="habilidades">
                   <h3>HABILIDADES</h3>
@@ -200,7 +211,9 @@
               </div>
               <div class="concept">
                 <h3>CONCEPT</h3>
-                <img style="width:50%" src="Imagenes web/ConceptSyren.jpeg" alt="Syren" >
+                <div class="arte">
+                  <img style="width:50%" src="Imagenes web/ConceptSyren.jpeg" alt="Syren" >
+                </div>
               </div>
               <div class="habilidades">
                 <h3>HABILIDADES</h3>
@@ -223,7 +236,9 @@
               </div>
               <div class="concept">
                 <h3>CONCEPT</h3>
-                <img style="width:50%" src="Imagenes web/ConceptFloki.jpeg" alt="Floki" >
+                <div class="arte">
+                  <img style="width:50%" src="Imagenes web/ConceptFloki.jpeg" alt="Floki" >
+                </div>
               </div>
               <div class="habilidades">
                 <h3>FLOKI</h3>
@@ -245,7 +260,9 @@
               </div>
               <div class="concept">
                 <h3>CONCEPT</h3>
-                <img style="width:50%" src="Imagenes web/ConceptNJ.jpeg" alt="NJ" >
+                <div class="arte">
+                  <img style="width:50%" src="Imagenes web/ConceptNJ.jpeg" alt="NJ" >
+                </div>
               </div>
               <div class="habilidades">
                 <h3>HABILIDADES</h3>
@@ -269,7 +286,9 @@
               </div>
               <div class="concept">
                 <h3>CONCEPT</h3>
-                <img style="width:50%" src="Imagenes web/ConceptAracne.jpeg" alt="Aracne" >
+                <div class="arte">
+                  <img style="width:50%" src="Imagenes web/ConceptAracne.jpeg" alt="Aracne" >
+                </div>
               </div>
               <div class="habilidades">
                 <h3>HABILIDADES</h3>
@@ -412,7 +431,7 @@
                             </div>
                             <div class="derecha">
                               <div class="foto">
-                                <img src="Imagenes web/Contr40.png" alt=" Contribución 100">
+                                <img src="Imagenes web/Contr100.png" alt=" Contribución 100">
                               </div>
                             </div>
                             <div class="izquierda">
@@ -442,6 +461,7 @@
             </div>
      </div>
      <!-- FIN DONACIONES-->
+     <br>
      <div class="apartado-redes">
        <div class="cabezeras">
          <a name="Redes Sociales">
@@ -489,16 +509,6 @@
               <b>Discord</b>
             </div>
           </div>
-          <div class="logo">
-            <div class="imagenLogo">
-              <a href="https://www.instagram.com/_neereeaaa_._/">
-                <img src="Imagenes web/GmailLogo.png" alt="Correo" >
-              </a>
-            </div>
-            <div class="nombreLogo">
-              <b>Correo</b>
-            </div>
-          </div>
        </div>
      </div>
      <!-- FIN REDES-->
@@ -529,6 +539,7 @@
       </div>
      </div>
      <!-- FIN COMENTARIOS-->
+     <br>
      <div class="apartado-preguntas">
       <div class="cabezeras">
         <a name="Preguntas">
@@ -644,8 +655,8 @@
               <div class="contenedor">
                 <br>
                 <h2>Hugo Silva Gil</h2>
-                <p class="titulo">CEO & Founder</p>
-                <p>example@example.com</p>
+                <p class="titulo">Diseñador Web </p>
+                <p>h.silva.2021@alumnos.urjc.es</p>
               </div>
             </div>
           </div>
@@ -656,8 +667,8 @@
               <div class="contenedor">
                 <br>
                 <h2>Lucía Álvarez Blázquez</h2>
-                <p class="titulo">Art Director</p>
-                <p>example@example.com</p>
+                <p class="titulo">Artista de Concept</p>
+                <p>l.alvareb.2021@alumnos.urjc.es</p>
               </div>
             </div>
           </div>
@@ -668,8 +679,8 @@
               <div class="contenedor">
                 <br>
                 <h2>Nerea González Mogeda</h2>
-                <p class="titulo">Designer</p>
-                <p>example@example.com</p>
+                <p class="titulo">Diseñadora Web</p>
+                <p>n.gonzalezm.2021@alumnos.urjc.es</p>
               </div>
             </div>
           </div>
@@ -679,8 +690,8 @@
               <div class="contenedor">
                 <br>
                 <h2>Isabel Sánchez Benito</h2>
-                <p class="titulo">CEO & Founder</p>
-                <p>example@example.com</p>
+                <p class="titulo">Guionista</p>
+                <p>i.sanchezb.2021@alumnos.urjc.es</p>
               </div>
             </div>
           </div>
@@ -691,8 +702,8 @@
               <div class="contenedor">
                 <br>
                 <h2>David Garde Olmo</h2>
-                <p class="titulo">Art Director</p>
-                <p>example@example.com</p>
+                <p class="titulo">Artista 3D</p>
+                <p>d.garde.2020@alumnos.urjc.es</p>
               </div>
             </div>
           </div>
